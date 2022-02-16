@@ -13,3 +13,9 @@ def fibs(number)
 end
 
 puts fibs(10) # Returns 55
+
+def fibs_rec(number)
+  number < 2 ? number : fibs_rec(number - 1) + fibs_rec(number - 2)
+end
+
+puts fibs_rec(10) # Returns 55
